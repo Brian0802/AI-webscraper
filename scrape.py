@@ -47,5 +47,8 @@ if __name__ == "__main__":
     html = scrape_site(url_for_testing)
     body_content = extract_body_content(html)
     cleaned_content = clean_body_content(body_content)
-    print(cleaned_content)
+    if cleaned_content:
+        print("Refined text result")
+        print(cleaned_content)
+    
     
